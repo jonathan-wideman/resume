@@ -7,12 +7,12 @@ export default function TechnicalExperienceSection({ items }) {
         <Section>
             <h2>Selected Technical Experience</h2>
             <SectionDiv>
-                {items.map((exp, index) => <div key={index}>
-                    <div className='split'>
+                <div className='section-grid'>
+                    {items.map((exp, index) => <React.Fragment key={index}>
                         <span>{exp.name}</span>
-                        <span>{exp.time}</span>
-                    </div>
-                </div>)}
+                        <span className='right-align'>{exp.time}</span>
+                    </React.Fragment>)}
+                </div>
             </SectionDiv>
         </Section>
     )

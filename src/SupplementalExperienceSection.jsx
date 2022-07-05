@@ -8,12 +8,12 @@ export default function SupplementalExperienceSection({ items }) {
         <Section>
             <h2>Supplemental Experience</h2>
             <SectionDiv>
-                {items.map((exp, index) => <div key={index}>
-                    <div className='split'>
+                <div className='section-grid'>
+                    {items.map((exp, index) => <React.Fragment key={index}>
                         <span>{exp.position && <em>{exp.position}, </em>}{exp.organization} {exp.description}</span>
-                        <DateRange {...exp.tenure} />
-                    </div>
-                </div>)}
+                        <span className='right-align'><DateRange {...exp.tenure} /></span>
+                    </React.Fragment>)}
+                </div>
             </SectionDiv>
         </Section>
     )

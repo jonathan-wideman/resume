@@ -11,7 +11,9 @@ function App() {
       <SettingsProvider>
         <ThemeContainer>
           <SettingsPanel email={resume.contact.email} links={resume.contact.sites} />
-          <Resume resume={resume} />
+          <main>
+            <Resume resume={resume} />
+          </main>
         </ThemeContainer>
       </SettingsProvider>
     </div>

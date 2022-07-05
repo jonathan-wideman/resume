@@ -10,7 +10,7 @@ export default function ProfessionalExperienceSection({ items }) {
             <h2>Professional Experience</h2>
             {items.map((exp, index) => <SectionDiv key={index}>
                 <div className='split'>
-                    <span><strong>{exp.company.name}</strong>, <Address {...exp.company.address} /></span>
+                    <span><span className='company-name'>{exp.company.name}</span>, <Address {...exp.company.address} /></span>
                     <DateRange {...exp.tenure} />
                 </div>
                 <div>
