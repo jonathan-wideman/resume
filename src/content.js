@@ -3,7 +3,10 @@ export const resume = {
         name: { first: 'Jonathan', middle: undefined, last: 'Wideman' },
         email: 'jonathan.m.wideman@gmail.com',
         preferredContectMethod: 'email',
-        sites: [{ id: 'github', name: undefined, url: 'https://github.com/jonathan-wideman' }]
+        sites: [
+            { id: 'github', name: undefined, url: 'https://github.com/jonathan-wideman' },
+            { id: 'linkedin', name: undefined, url: 'https://www.linkedin.com/in/jonathan-wideman-578b73180/' }
+        ]
     },
     summary: [
         'Six years of professional experience in web development; adept with front & backend technologies.',
